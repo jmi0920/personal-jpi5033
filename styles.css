@@ -1,0 +1,91 @@
+.blog-post{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+
+}
+.container{
+    background-color: darkgrey;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 5em;
+}
+
+.blog-post p{
+    text-align: center;
+}
+.blog-post img{
+    padding: 10px;
+    width: 200px;
+    height: 200px
+}
+
+.blog {
+    background-image: url(blog-background.jpg);
+    background-size: cover;
+}
+
+.footer{
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    width: auto;
+}
+
+.blog-li{
+    display:inline-block;
+}
+
+.title-image{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.blog-content{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: .75em;
+}
+.blog-content p{
+
+}
+
+.blog-title{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+.blog-title hr{
+    border-color: black;
+}
+
+.navbar{
+    position: relative;
+}
+
+.navbar-nav li:not(:last-child):not(.blog-li):not(.no-li-border){
+    border-right: 4px solid red
+}
+
+.navbar-nav li:hover{
+    background-color: #595959;
+}
