@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
+<link rel="import" href="/shared/nav_bar.html" id="navLink">
+<link rel = "script" href="/scripts/navBar.js">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,16 +21,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
-
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -48,12 +45,12 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Joshua Irwin</a>
+            <a class="navbar-brand" href="../index.html">Joshua Irwin</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../projects.html">Projects</a></li>
             <li><a href="#">Page 3</a></li>
         </ul>
 
@@ -67,16 +64,15 @@
                      is seen on left side of NavBar -->
                 <ul class = "dropdown-menu dropdown-menu-right">
                     <li class="blog-li no-li-border"><a href="iops_blog.html">Is Our Privacy Safe In a Hyper-connected World?</a></li>
-                    <li class="no-li-border"><a href = "#">Blog 2</a></li>
-                    <li class="no-li-border"><a href ="3">Why Sasha Is a Pleb</a></li>
-                <!--<li class = "active"><a href="#">Blog</a>-->
-            </ul>
+                    <li class="no-li-border"><a href = "big_data.html">Big Data and Personal Data Collection</a></li>
+                    <li class="no-li-border"><a href ="iot_ddos.html">Why IoT Security Is Essential</a></li>
+                    <!--<li class = "active"><a href="#">Blog</a>-->
+                </ul>
         </div>
     </div>
 </nav>
-
 <!-- Links to another page or articles all displayed here? -->
-<div class = "container">
+<div class = "container container-blog">
     <div class = "blog-post">
         <div id = "blog1">
            <!--  <img src = "http://spr.com/wp-content/uploads/2016/08/Internet-of-Things-01.png"> -->
@@ -88,22 +84,32 @@
             </p>
         </div>
     </div>
+    <br>
     <hr>
 
     <div class="blog-post">
-        <img src = "http://spr.com/wp-content/uploads/2016/08/Internet-of-Things-01.png">
-        <p>
-            <a href = "#">Blog 2</a>
-        </p>
+        <div id=blog-2">
+            <img src = "resources/images/big_data_thumbnail.jpg">
+        </div>
+        <div>
+            <p>
+                <a href = "big_data.html">Big Data and Personal Data Collection</a>
+            </p>
+        </div>
     </div>
+
+    <hr>
     <hr>
 
     <div class = " blog-post">
+        <img src="resources/images/blog_3_image.png">
     <p>
-        <a href = "#">Blog 3</a>
+        <a href = "iot_ddos.html">Why IoT Security Is Essential</a>
     </p>
     </div>
+    <br>
     <hr>
+
 </div>
 <br><br>
 <div class="footer">
